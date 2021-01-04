@@ -1,0 +1,21 @@
+{
+  "all_downloads": 5,
+  "users": [
+    {
+      "id": "53rwerwere3",
+      "errors": [
+        {
+          "time": 1609717977891,
+          "error_message": "maps/debo.mdll",
+          "error_code": 404
+        },
+        {
+          "time": 1609718002457,
+          "error_message": "maps/debo",
+          "error_code": 404
+        }
+      ],
+      "download_count": 1
+    }
+  ]
+}

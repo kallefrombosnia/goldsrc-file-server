@@ -1,0 +1,24 @@
+{
+  "name": "goldsrc-file-server",
+  "version": "1.0.0",
+  "description": "CS 1.6 serve static files",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --ignore db.json app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kallefrombosnia/goldsrc-file-server.git"
+  },
+  "author": "Izet kalle Mulalic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kallefrombosnia/goldsrc-file-server/issues"
+  },
+  "homepage": "https://github.com/kallefrombosnia/goldsrc-file-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.3",
+    "lowdb": "^1.0.0"
+  }
+}

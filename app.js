@@ -37,5 +37,5 @@ app.use((req, res, next) => {
 
 // Start app and listen on web port
 app.listen(global.config.port, () =>{
-    console.log(`Web server started on port http://localhost:3000 ...`);
+    console.log(`Web server started on port http://localhost:${global.config.port}...`);
 });

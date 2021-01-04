@@ -4,7 +4,9 @@
   "description": "CS 1.6 serve static files",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon --ignore db.json app"
+    "start": "nodemon --ignore db.json app",
+    "production": "node app.js"
+
   },
   "repository": {
     "type": "git",

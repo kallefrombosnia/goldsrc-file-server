@@ -10,7 +10,7 @@ Uploadati sve fajlove na server te zatim editovati `config.js` file (sve imate o
 Nakon toga pokrenuti npm skriptu koja starta server.
 
 ```sh
-$ npm run production
+$ npm install && npm run production
 ```
 
 Nakon toga ispisat ce vam u konzolu da je webserver pokrenut. Proces je potrebno ostaviti u screen da se ne ugasi!

@@ -15,7 +15,7 @@ db.defaults({ users: {}, all_downloads: 0}).write()
 const app = express();
 
 // Serve static files 
-app.use(express.static('static'))
+app.use(express.static(global.config.static_folder_name))
 
 
 /*

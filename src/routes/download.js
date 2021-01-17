@@ -2,7 +2,7 @@ const router = require('express').Router();
 const rateLimit = require("express-rate-limit");
 
 
-const {checkUserExists, checkFileExists} = require('../functions/file');
+const {checkUserExists, checkFileExists, checkExtension} = require('../functions/file');
 const Logger = require('../functions/logger');
 
 
@@ -21,9 +21,10 @@ router.get('/:userid/cstrike/:path(*)', createDownloadRequestLimiter, (req, res)
     // Check if user dir exists
     if(checkUserExists(userid)){
 
-        // Check if file exists in user dir
-        if(checkFileExists(userid, path)){
+        // Check if file exists in user dir and file extension is allowed
+        if(checkFileExists(userid, path) && checkExtension(path)){
            
+            console.log('passed')
             // Send download header
             res.download(`${process.cwd()}/${global.config.static_folder_name}/${userid}/${path}`, (err) => {
 

@@ -37,7 +37,29 @@ const checkFileExists = (userid, filepath) => {
     }
 }
 
+
+/**
+ * Check if file extension is for download
+ * @constructor
+ * @param {string} filepath - pathname.
+ * @returns {Boolean}
+ */
+
+const checkExtension = (filepath) =>{
+
+    // Get extension name
+    const ext = filepath.match(/\.[0-9a-z]+$/i);
+    
+    // Check if exists match
+    if(ext){
+        return global.config.whitelist_ext.includes(ext[0]) ? true : false;
+    }
+
+    return false;
+}
+
 module.exports = {
     checkUserExists,
-    checkFileExists
+    checkFileExists,
+    checkExtension
 }

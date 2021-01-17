@@ -1,5 +1,5 @@
 {
-  "all_downloads": 5,
+  "all_downloads": 9,
   "users": [
     {
       "id": "53rwerwere3",
@@ -13,9 +13,14 @@
           "time": 1609718002457,
           "error_message": "maps/debo",
           "error_code": 404
+        },
+        {
+          "time": 1610837606248,
+          "error_message": "bag.mdl",
+          "error_code": 404
         }
       ],
-      "download_count": 1
+      "download_count": 5
     }
   ]
 }
